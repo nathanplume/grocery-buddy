@@ -24,7 +24,7 @@ You will need to download and install fontawesome to the project as I have not s
 
 ### Installing
 
-download from awesome here: https://fontawesome.com/download
+download front awesome here: https://fontawesome.com/download
 
 ## Author
 
