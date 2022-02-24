@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/app.css" />
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-6.0.0-web/css/all.min.css"
+    />
+    <title>Grocery Buddy</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Grocery Buddy</h1>
+      <p class="alert">this is an alert</p>
+      <!-- <p>this is an alert</p> -->
+      <section class="center">
+        <!-- grocery form -->
+        <form class="grocery-form">
+          <input type="text" id="grocery" placeholder="e.g bread..." />
+          <button type="submit" class="grocery-btn">
+            <i class="fa-solid fa-plus"></i>
+          </button>
+        </form>
+        <!-- list -->
+        <div class="grocery-container">
+          <div class="grocery-list">
+            <article class="grocery-item">
+              <p class="title">bread</p>
+              <div class="btn-container">
+                <button type="button" class="edit-btn">
+                  <i class="fa-solid fa-pen"></i>
+                </button>
+                <button type="button" class="delete-btn">
+                  <i class="fa-solid fa-trash"></i>
+                </button>
+              </div>
+            </article>
+          </div>
+          <!-- button -->
+          <button type="button" class="clear-btn">
+            <i class="fa-solid fa-trash-arrow-up"></i>
+          </button>
+        </div>
+      </section>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>

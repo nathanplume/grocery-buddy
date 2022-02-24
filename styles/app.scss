@@ -1,0 +1,127 @@
+// google fonts
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+// import other scss files
+@import 'variables';
+
+@mixin centerStuff {
+  display: flex;
+  justify-content: center;
+  //   align-items: center;
+}
+
+@mixin buttons {
+  cursor: pointer;
+  @include centerStuff();
+  align-items: center;
+  padding: 1rem;
+  font-size: 1rem;
+  border: none;
+  color: $light-grey;
+  background: purple;
+}
+
+body {
+  @include centerStuff();
+  height: 100vh;
+  font-family: 'Open Sans', sans-serif;
+  background-color: $light-grey;
+  color: $dark-grey;
+}
+
+h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+  margin: 3rem 0rem;
+  text-align: center;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.btn-container {
+  position: relative;
+}
+.alert {
+  text-align: center;
+  // visibility: hidden;
+  background-color: #e74c3c;
+  color: $light-grey;
+  padding: 0.5rem 0rem;
+  margin-bottom: 1rem;
+  position: absolute;
+  top: 100px;
+  width: 400px;
+  display: none;
+}
+
+.center {
+  //   @include centerStuff();
+  background-color: $light-grey2;
+  border-radius: 10px;
+  padding: 2rem;
+  .grocery-form {
+    // background-color: red;
+    margin-bottom: 1rem;
+    @include centerStuff();
+    input {
+      padding: 1rem;
+      width: 250px;
+      border: none;
+      font-size: inherit;
+      font-family: inherit;
+      border-radius: 10px 0px 0px 10px;
+    }
+    button {
+      @include buttons();
+      background-color: #2ecc71;
+      height: 54px;
+      width: 54px;
+      border-radius: 0px 10px 10px 0px;
+    }
+    button:hover {
+      background-color: #2ecc70c4;
+    }
+  }
+  .grocery-item {
+    @include centerStuff();
+    justify-content: space-between;
+    align-items: center;
+    // background-color: $light-grey;
+    margin: 1rem 0rem;
+    padding: 0.3rem 0.5rem;
+    border-radius: 5px;
+    .btn-container {
+      button {
+        // @include buttons();
+        border: none;
+        padding: 0.5rem;
+        font-size: 1rem;
+        color: $light-grey;
+      }
+      .edit-btn {
+        background-color: #f1c40f;
+      }
+      .edit-btn:hover {
+        background-color: #f1c40fc7;
+      }
+      .delete-btn {
+        background-color: #e74c3c;
+      }
+      .delete-btn:hover {
+        background-color: #e74d3ccb;
+      }
+    }
+  }
+  .clear-btn {
+    @include buttons();
+    width: 320px;
+    margin: auto;
+    display: block;
+    background-color: #e74c3c;
+  }
+  .clear-btn:hover {
+    background-color: #e74d3ccb;
+  }
+}
