@@ -29,14 +29,21 @@ button:hover {
 
 .alert {
   text-align: center;
-  background-color: #e74c3c;
-  color: #f8f9fa;
   padding: 0.5rem 0rem;
   margin-bottom: 1rem;
   position: absolute;
   top: 100px;
   width: 400px;
-  display: none;
+}
+
+.alert-danger {
+  color: #f8f9fa;
+  background-color: #e74c3c;
+}
+
+.alert-success {
+  color: #f8f9fa;
+  background-color: #2ecc71;
 }
 
 .center {
@@ -106,6 +113,10 @@ button:hover {
   margin: 1rem 0rem;
   padding: 0.3rem 0.5rem;
   border-radius: 5px;
+}
+
+.center .grocery-item .title {
+  text-transform: capitalize;
 }
 
 .center .grocery-item .btn-container button {
