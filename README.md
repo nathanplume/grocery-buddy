@@ -1,6 +1,7 @@
 # Grocery Buddy
 
 link to project: https://np-grocery-buddy.netlify.app/
+
 A vanilla javascript todo application.
 
 ## Description
